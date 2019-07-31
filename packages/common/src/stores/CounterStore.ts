@@ -5,4 +5,4 @@ class CounterStore {
   @observable count = 0
 }
 
-export const CounterStoreContext = createContext(new CounterStore())
+export const CounterStoreContext = createContext(new CounterStore());
