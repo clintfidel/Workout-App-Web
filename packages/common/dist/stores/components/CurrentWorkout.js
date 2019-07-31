@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var react_native_1 = require("react-native");
 var RouterStore_1 = require("../RouterStore");
-exports.WorkoutHistory = function () {
+exports.CurrentWorkout = function () {
     var routerStore = React.useContext(RouterStore_1.RouterStoreContext);
     return (React.createElement(react_native_1.View, null,
-        React.createElement(react_native_1.Text, null, "Workout History Page"),
-        React.createElement(react_native_1.Button, { title: 'create workout', onPress: function () { return routerStore.screen = 'CurrentWorkout'; } })));
+        React.createElement(react_native_1.Text, null, "My workouts"),
+        React.createElement(react_native_1.Button, { title: 'create workout', onPress: function () { return routerStore.screen = "WorkoutHistory"; } })));
 };

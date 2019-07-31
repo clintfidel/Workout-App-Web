@@ -10,11 +10,11 @@ var mobx_1 = require("mobx");
 var react_1 = require("react");
 var RouterStore = /** @class */ (function () {
     function RouterStore() {
-        this.path = 'History';
+        this.screen = 'WorkoutHistory';
     }
     __decorate([
         mobx_1.observable
-    ], RouterStore.prototype, "path", void 0);
+    ], RouterStore.prototype, "screen", void 0);
     return RouterStore;
 }());
 exports.RouterStoreContext = react_1.createContext(new RouterStore());
