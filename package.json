@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "mono-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start"
+  },
+  "author": "clintfidel",
+  "license": "ISC",
+  "workspaces": ["packages/*"]
+}

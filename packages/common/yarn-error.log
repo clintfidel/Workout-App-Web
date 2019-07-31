@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn build
+
+PATH: 
+  /home/clinton/.local/share/umake/bin:/home/clinton/.local/share/umake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/clinton/Android/Sdk/emulator:/home/clinton/Android/Sdk/tools:/home/clinton/Android/Sdk/tools/bin:/home/clinton/Android/Sdk/platform-tools:/home/clinton/Android/Sdk/emulator:/home/clinton/Android/Sdk/tools:/home/clinton/Android/Sdk/tools/bin:/home/clinton/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  8.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/clinton/mono-repo/package.json: Unexpected token } in JSON at position 181
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "@clint/common",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@types/react-native": "^0.60.2",
+      "react": "^16.8.6",
+      "react-native": "^0.60.4",
+      "typescript": "^3.5.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
